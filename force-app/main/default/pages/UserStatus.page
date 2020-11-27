@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-27-2020
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   11-27-2020   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+<apex:page>
+<apex:pageBlock title="User Status">
+        <apex:pageBlockSection columns="1">
+            {! $User.FirstName } {! $User.LastName }
+           ({! $User.Username })
+
+           ({! IF($User.isActive, $User.Username, 'inactive') })
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
