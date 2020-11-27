@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Prasad Paraparathadimai
+  @group             : 
+  @last modified on  : 11-27-2020
+  @last modified by  : Prasad Paraparathadimai
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   11-27-2020   Prasad Paraparathadimai   Initial Version
+-->
+<apex:page standardController="Account">
+    <apex:pageBlock title="Account Summary">
+        <apex:pageBlockSection>
+            Name: {! Account.Name } <br/>
+            Phone: {! Account.Phone } <br/>
+            Industry: {! Account.Industry } <br/>
+            Revenue: {! Account.AnnualRevenue } <br/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

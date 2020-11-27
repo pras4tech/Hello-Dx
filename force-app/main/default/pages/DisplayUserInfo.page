@@ -8,12 +8,12 @@
   Ver   Date         Author                               Modification
   1.0   11-27-2020   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
 -->
-<apex:page>
-    <p>{! $User.FirstName & ' ' & $User.LastName } ({! $User.Username })</p>
+<apex:page controller="DisplayUserInfoController">
+    <p>{! $User.FirstName }</p>
 
     <p>Last used on 
-        <apex:outputText value="{0, date, dd/MM/yyyy}">
-            <apex:Param value="{! $User.LastLoginDate}" />
+        <apex:outputText value="{0, date, MM/dd/yyyy}">
+            <apex:Param value="{! lastLoginDate }" />
         </apex:OutputText>
     </p>
 </apex:page>
