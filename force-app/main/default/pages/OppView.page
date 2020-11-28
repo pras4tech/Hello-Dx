@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Prasad Paraparathadimai
+  @group             : 
+  @last modified on  : 11-27-2020
+  @last modified by  : Prasad Paraparathadimai
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   11-27-2020   Prasad Paraparathadimai   Initial Version
+-->
+<apex:page standardController="Opportunity">
+    <apex:pageBlock title="Opportunity Details">
+        <apex:pageBlockSection>
+            <apex:outputField value="{! Opportunity.Name }"/>
+            <apex:outputField value="{! Opportunity.Amount }"/>
+            <apex:outputField value="{! Opportunity.CloseDate }"/>
+            <apex:outputField value="{! Opportunity.Account.Name }"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
